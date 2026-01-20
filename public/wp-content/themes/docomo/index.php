@@ -3,7 +3,9 @@
     <div class="indexwaku">
         <div class="tops">
             <div class="slaider">
-                <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+                <?php if (function_exists('meteor_slideshow')) {
+                    meteor_slideshow();
+                } ?>
             </div>
             <div class="menus">
                 <ul>
@@ -46,54 +48,15 @@
                         </a>
                     </li>
                 </ul>
-            </div><!--<div class="menus">-->
-        </div><!--<div class="tops">-->
+            </div>
+            <!--<div class="menus">-->
+        </div>
+        <!--<div class="tops">-->
         <img class="make_you_happy pc_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_make_you_happy.png">
         <img class="make_you_happysp sp_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_make_you_happy_sp.png">
-    </div><!--<div class="indexwaku">-->
-    <section class="topics_info">
-        <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_topics.png"></h2>
-        <div class="hukuchiyama baces">
-            <?php topoics('福知山店'); ?>
-            <div class="right_waku">
-                <a href="<?php echo home_url('/topics/fukuchiyama/'); ?>">
-                    <img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_itiran_off.png">
-                </a>
-            </div>
-            <div class="facebook">
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.7&appId=236244149751281";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-page" data-href="https://www.facebook.com/%E3%83%89%E3%82%B3%E3%83%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E7%A6%8F%E7%9F%A5%E5%B1%B1%E5%BA%97-1495114167408260/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/%E3%83%89%E3%82%B3%E3%83%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E7%A6%8F%E7%9F%A5%E5%B1%B1%E5%BA%97-1495114167408260/" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/%E3%83%89%E3%82%B3%E3%83%A2%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E7%A6%8F%E7%9F%A5%E5%B1%B1%E5%BA%97-1495114167408260/">ドコモショップ福知山店</a></blockquote>
-                </div>
-            </div>
-        </div><!--<div class="hukuchiyama">-->
-        <div class="mineyama baces">
-            <?php topoics('峰山店'); ?>
-            <div class="right_waku">
-            <a href="<?php echo home_url('/topics/mineyama/'); ?>">
-                <img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_itiran_off.png">
-            </a>
-            </div>
-            <div class="facebook">
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.7&appId=236244149751281";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-page" data-href="https://www.facebook.com/docomo.mineyama/?fref=ts" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/docomo.mineyama/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/docomo.mineyama/?fref=ts">ドコモショップ峰山店</a></blockquote></div>
-            </div>
-        </div><!--<div class="mineyama">-->
-    </section><!--<section class="topics_info">-->
+    </div>
+    <!--<div class="indexwaku">-->
+
     <section class="campaign">
         <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_campaign.png"></h2>
         <ul>
@@ -118,7 +81,8 @@
                 </a>
             </li>
         </ul>
-    </section><!--<section class="campaign">-->
+    </section>
+    <!--<section class="campaign">-->
     <section class="recruit">
         <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit.png" alt="dメニュー"></h2>
         <ul>
@@ -131,40 +95,43 @@
                 </a>
             </li>
         </ul>
-    <?php if(is_mobile_cheange()): ?>
-        <ul class="sp_only">
-            <li class="rgiht"><img class="mini" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_02.png" alt="スタッフ紹介の画像"></li>
-            <li class="left prefari">
-                <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit_recruit.png" alt="募集要項"></h2>
-                <p>ドコモショップ福知山店・峰山店の<br>募集要項、待遇についてご紹介します。</p>
-                <a href="<?php echo home_url('/recruit/'); ?>">
-                    <img class="links sp_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_requirements_off.png" >
-                </a>
-            </li>            
-        </ul>
-    <?php else: ?>
-        <ul class="pc_only">
-            <li class="left prefari">
-                <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit_recruit.png" alt="募集要項"></h2>
-                <p>ドコモショップ福知山店・峰山店の<br>募集要項、待遇についてご紹介します。</p>
-                <a href="<?php echo home_url('/recruit/'); ?>">
-                    <img class="links pc_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_requirements_off.png" >
-                </a>
-            </li>    
-            <li class="rgiht"><img class="<?php if(is_mobile_cheange()){}else { echo 'box';} ?>" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_02.png" alt="スタッフ紹介の画像"></li>
-        </ul>
-    <?php endif; ?>
+        <?php if (is_mobile_cheange()): ?>
+            <ul class="sp_only">
+                <li class="rgiht"><img class="mini" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_02.png" alt="スタッフ紹介の画像"></li>
+                <li class="left prefari">
+                    <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit_recruit.png" alt="募集要項"></h2>
+                    <p>ドコモショップ福知山店・峰山店の<br>募集要項、待遇についてご紹介します。</p>
+                    <a href="<?php echo home_url('/recruit/'); ?>">
+                        <img class="links sp_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_requirements_off.png">
+                    </a>
+                </li>
+            </ul>
+        <?php else: ?>
+            <ul class="pc_only">
+                <li class="left prefari">
+                    <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit_recruit.png" alt="募集要項"></h2>
+                    <p>ドコモショップ福知山店・峰山店の<br>募集要項、待遇についてご紹介します。</p>
+                    <a href="<?php echo home_url('/recruit/'); ?>">
+                        <img class="links pc_only" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_requirements_off.png">
+                    </a>
+                </li>
+                <li class="rgiht"><img class="<?php if (is_mobile_cheange()) {
+                                                } else {
+                                                    echo 'box';
+                                                } ?>" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_02.png" alt="スタッフ紹介の画像"></li>
+            </ul>
+        <?php endif; ?>
 
 
         <ul>
-            <li class="left"><img class="mini" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_03.png" ></li>
+            <li class="left"><img class="mini" src="<?php echo get_bloginfo('template_url'); ?>/img/index/bunner_recruit_03.png"></li>
             <li class="rgiht prefari">
                 <h2><img class="" src="<?php echo get_bloginfo('template_url'); ?>/img/index/title_recruit_entry.png"></h2>
                 <p>ドコモショップ福知山店・峰山店への<br>エントリーをご希望の方</p>
                 <a href="<?php echo home_url('/entry/'); ?>">
-                    <img class="links" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_recruit_entry_off.png" >
+                    <img class="links" src="<?php echo get_bloginfo('template_url'); ?>/img/index/botton_recruit_recruit_entry_off.png">
                 </a>
-            </li>            
+            </li>
         </ul>
     </section>
 </main>
